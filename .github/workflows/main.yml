@@ -24,7 +24,7 @@ jobs:
           context: .
           push: true
           # IMPORTANT: Change 'your-app-name' to the name of your project
-          tags: ${{ secrets.DOCKER_USERNAME }}/Deployment:latest 
+          tags: ${{ secrets.DOCKER_USERNAME }}/deployment:latest 
 
       - name: Trigger Render Deploy
         run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
